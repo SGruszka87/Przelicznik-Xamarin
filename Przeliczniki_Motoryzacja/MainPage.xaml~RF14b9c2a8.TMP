@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Przeliczniki_Motoryzacja.MainPage">
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid AbsoluteLayout.LayoutBounds="0,0,0,0" AbsoluteLayout.LayoutFlags="All">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <!-- Place new controls here -->
+            <Label Text="Przeliczniki:" 
+                   Grid.Column="0"
+                   Grid.Row="0"/>
+            <Frame  
+                   Grid.Column="0"
+                Grid.ColumnSpan="2"
+                   Grid.Row="0"></Frame>
+            <Label Text="Przeliczniki:" 
+                   Grid.Column="0"
+                   Grid.Row="0"/>
+            <Label Text="Przeliczniki:" 
+                   Grid.Column="0"
+                   Grid.Row="0"/>
+            <Label Text="Przeliczniki:" 
+                   Grid.Column="0"
+                   Grid.Row="0"/>
+            <Label Text="Przeliczniki:" 
+                   Grid.Column="0"
+                   Grid.Row="0"/>
+            <Label Text="Przeliczniki:" 
+                   Grid.Column="0"
+                   Grid.Row="0"/>
+        </Grid>
+        <Frame IsVisible="{Binding IsBusy}" IsEnabled="{Binding IsBusy}" AbsoluteLayout.LayoutBounds="0,0,0,0" AbsoluteLayout.LayoutFlags="All">
+           
+            <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        </Frame>
+    </AbsoluteLayout>
+   
+
+</ContentPage>
